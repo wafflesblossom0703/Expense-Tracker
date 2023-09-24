@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+h2{
+    color: white;
+    text-align: centerr;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    padding: 10px;
+}
+
+/* Default styles for all screen sizes */
+body {
+    font-size: 16px;
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 18px;
+    }
+    .container {
+        padding: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 20px;
+    }
+    .container {
+        padding: 40px;
+    }
+}
+
+.income{
+    position: absolute;
+    width: 50%;
+    max-width: 540px;
+    background: black;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 40px 30px 70px;
+    border-radius: 15px;
+}
+
+.expense{
+    position: absolute;
+    width: 50%;
+    max-width: 540px;
+    background: black;
+    margin-left: 900px;
+    margin-top: 20px;
+    padding: 40px 30px 70px;
+    border-radius: 15px;
+}
+
+#row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+#row2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 15px;
+}
+
+button{
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: aquamarine;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#list-container{
+    display: flex;
+    color: black;
+    background-color: aquamarine;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+}
+
+
+ul li{
+    position: relative;
+    list-style: upper-roman;
+    font-size: 20px;
+    padding: 10px 10px 10px 50px;
+    user-select: none;
+    color: white;
+}
+
+li button{
+    background-color: red;
+    font-size: 20px;
+    padding: 10px 10px 10px 50px;
+    height: auto;
+}
+
+ul li span{
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+ul li span:hover{
+    color: aquamarine;
+}
